@@ -400,5 +400,8 @@ footer-links h4 {
 
 .index-hero {
     width: 100%;
-    background-color: var(--darkless);
+    /* background-color: var(--darkless); */
+    background-image: url(/img/banner.png);
+    background-size: cover;
+    background-position: center;
 }
