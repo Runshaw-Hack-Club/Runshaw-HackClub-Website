@@ -1,5 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+@font-face {
+    font-family: 'Phantom Sans';
+    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff') format('woff'),
+        url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Phantom Sans';
+    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff') format('woff'),
+        url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Phantom Sans';
+    src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff') format('woff'),
+        url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 header {
     background: var(--blue);
     background-image: url(images/pr.svg);
@@ -389,19 +416,23 @@ footer-links h4 {
 @media (max-width: 740px) {
     .index-hero {
         padding-top: 70px;
+        background-color: var(--darkless);
     }
 }
 
 @media (min-width: 740px) {
     .index-hero {
         padding-top: 1px;
+        background-image: url(/img/banner.png);
+        background-size: cover;
+        background-position: center;
     }
 }
 
 .index-hero {
     width: 100%;
-    /* background-color: var(--darkless); */
-    background-image: url(/img/banner.png);
-    background-size: cover;
-    background-position: center;
+}
+
+.hackclub-text {
+    font-family: 'Phantom Sans', sans-serif !important;
 }
